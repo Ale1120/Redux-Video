@@ -1,4 +1,4 @@
-# React.jsVideo
-React.js-video
+# Redux-Video
+Redux-Video
 
 npm install
