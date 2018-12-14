@@ -4,7 +4,7 @@ import Home from '../pages/containers/home.js';
 import data from '../api.json';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducer from '../reducers/data'
+import reducer from '../reducers/data';
 //import Playlist from './src/playlist/components/playlist.js';
 //import data from './src/api.json';
 
