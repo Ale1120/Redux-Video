@@ -6,6 +6,7 @@ import ModalContainer from '../../widgets/containers/modal';
 import Modal from '../../widgets/components/modal';
 import HandleError from '../../error/containers/handle-error';
 import VideoPlayer from '../../player/containers/video-player';
+import { connect } from 'react-redux';
 
 class Home extends Component {
   state = {
@@ -43,7 +44,7 @@ class Home extends Component {
               <Modal
                 handleClick={this.handleCloseModal}
               >
-              <VideoPlayer 
+              <VideoPlayer
                 autoplay
                 title={this.state.media.title}
                 src={this.state.media.src}
