@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import Home from '../pages/containers/home.js';
 import data from '../api.json';
 import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
 //import Playlist from './src/playlist/components/playlist.js';
 //import data from './src/api.json';
 
@@ -25,4 +27,9 @@ const homeContainer = document.getElementById('home-container')
 //ReactDom.render(que voy a rendrizar, donde lo hare);
 //render(<Media /> ,app);
 //propiedades dinamicas
-render(<Home data={data} /> ,homeContainer);
+
+render(
+  <Provider store={store}>
+  <Home />
+  </Provider>
+,homeContainer);
